@@ -152,8 +152,6 @@ header {
 
 .work-period ul {
   display: float;
-  display: float;
-  display: float;
   padding-left: 0;
 }
 
@@ -194,8 +192,6 @@ h1.section-title {
 }
 
 .work-categories {
-  display: float;
-  display: float;
   display: float;
   list-style: none;
   padding-left: 0;
@@ -305,7 +301,7 @@ h2.section-title {
   padding: 9px 12px;
   border-radius: 8px;
   margin-bottom: 12px;
-  display: float ;
+  display: float;
   background-color: #f7f7f9;
 }
 
