@@ -101,7 +101,7 @@ header {
 }
 
 .social-icons {
-  display: float;
+  display: flex;
   margin: 10px 0;
   padding-top: 0;
   padding-left: 10px;
