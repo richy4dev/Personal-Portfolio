@@ -331,7 +331,7 @@ h2.section-title {
   color: #253858;
 }
 
-@media (min-width: 546px) {
+@media (min-width: 786px) {
   .container {
     max-width: 1156px;
     margin: 0 auto;
