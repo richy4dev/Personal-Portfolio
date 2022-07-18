@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  color: #344563;
 }
 
 body {
@@ -21,12 +23,16 @@ header {
   border-bottom-left-radius: 150px;
 }
 
+i.fas.fa-bars {
+  color: #396df2;
+}
+
 .width-100 {
   width: 100%;
 }
 
 .my-logo {
-  display: float;
+  display: flex;
   left: 16.67%;
   right: 16.67%;
   top: 50%;
@@ -45,15 +51,20 @@ header {
 }
 
 .menu-bar {
-  padding-left: 300px;
-  color: #6070ff;
-  font-size: 20px;
-  padding-bottom: 13px;
-  padding-top: 10px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.nav-links {
+  display: none;
 }
 
 .headline-wrap {
-  background-image: url(Image/Background-image.png);
+  background-image: url(image/back-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
@@ -63,13 +74,17 @@ header {
   overflow: hidden;
 }
 
+.intro-text {
+  padding-left: 35px;
+}
+
 .introduction {
   font-size: 40px;
   font-weight: 700;
   color: #172b4d;
   line-height: 52px;
   margin: 0;
-  display: float;
+  display: flex;
   align-items: center;
   padding-left: 29px;
   padding-top: 100px;
@@ -98,13 +113,14 @@ header {
   line-height: 0px;
   padding-top: 12px;
   margin-bottom: 30px;
+  padding-left: 25px;
 }
 
 .social-icons {
   display: flex;
   margin: 10px 0;
   padding-top: 0;
-  padding-left: 10px;
+  padding-left: 24px;
   gap: 20px;
 }
 
@@ -151,7 +167,7 @@ header {
 }
 
 .work-period ul {
-  display: float;
+  display: flex;
   padding-left: 0;
 }
 
@@ -192,7 +208,7 @@ h1.section-title {
 }
 
 .work-categories {
-  display: float;
+  display: flex;
   list-style: none;
   padding-left: 0;
 }
@@ -284,7 +300,7 @@ h2.section-title {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  display: float;
+  display: flex;
   align-items: center;
 }
 
@@ -302,7 +318,7 @@ h2.section-title {
   padding: 9px 12px;
   border-radius: 8px;
   margin-bottom: 12px;
-  display: float;
+  display: flex;
   background-color: #f7f7f9;
 }
 
@@ -318,6 +334,119 @@ h2.section-title {
   font-size: 15px;
   line-height: 20px;
   color: #253858;
+}
+
+@media (min-width: 786px) {
+  .container {
+    max-width: 1156px;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .nav-links li {
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    padding-right: 20px;
+    color: #344563;
+  }
+
+  i.fas.fa-bars {
+    display: none;
+  }
+
+  .work-description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .headline-wrap {
+    background-image: url(image/back-desktop.svg);
+    background-position: center;
+  }
+
+  .greetings {
+    font-weight: 700;
+    font-size: 48px;
+    max-width: 500px;
+  }
+
+  .headline-profile {
+    max-width: 920px;
+    font-size: 20px;
+  }
+
+  .works-grid-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card-content {
+    max-width: 496px;
+  }
+
+  .works-grid-item img {
+    max-width: 544px;
+  }
+
+  .works-grid-item:nth-child(2) img {
+    grid-column: 2/2;
+    grid-row: 1;
+  }
+
+  .works-grid-item:nth-child(2) .card-content {
+    grid-column: 1/2;
+  }
+
+  .works-grid-item:nth-child(4) img {
+    grid-column: 2/2;
+    grid-row: 1;
+  }
+
+  .works-grid-item:nth-child(4) .card-content {
+    grid-column: 1/2;
+  }
+
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .content-aboutleft {
+    max-width: 447px;
+  }
+
+  .content-aboutleft p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .other-info-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .view-list-item {
+    display: block;
+  }
+
+  .lang-icon {
+    display: block;
+  }
 }
 
 /* Contact Form */
@@ -366,7 +495,7 @@ h2.section-title {
   line-height: 28px;
   text-align: center;
   font-weight: 400px;
-  width: 327px;
+  width: 569px;
   padding-right: 12px;
   padding-top: 2px;
   margin: auto;
@@ -378,6 +507,7 @@ h2.section-title {
   flex-direction: column;
   max-width: 300px;
   margin: 20px auto;
+  align-items: center;
 }
 
 .contact-form_container .form input,
@@ -388,7 +518,7 @@ h2.section-title {
   border: 1px solid #cfd8dc;
   color: #172b4d;
   font-size: 17px;
-  width: 100%;
+  width: 447px;
   margin: 10px 0;
   font-family: Poppins, sans-serif;
 }

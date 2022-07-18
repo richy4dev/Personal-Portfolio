@@ -14,14 +14,28 @@
 <body>
   <header>
     <div class="my-logo">
-      <a href="#" class="logo">Richard Obaseki</a>
       <nav class="menu-bar">
-        <i class="fas fa-bars"></i>
+        <a href="#" class="logo">Richard Obaseki</a>
+        <div>
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Portfolio</a>
+            </li>
+          <li>
+            <a href="#">About</a>
+            </li>
+          <li>
+            <a href="#">Contact</a>
+            </li>
+        </ul>
       </nav>
     </div>
     </header>
     <section class="headline-wrap">
       <div class="flex headline-wrap">
+        <div class="intro-text">
         <h1 class="introduction">
           I’m Richard <br />Glad to see <br />
           you!
@@ -83,6 +97,7 @@
           </li>
         </ul>
       </div>
+      </div>
     </section>
 
     <section class="works">
@@ -90,10 +105,11 @@
         <div class="flex works-grid-item">
           <img
             class="width-100"
-            src="Image/Tonic.png"
+            src="Image/Snapshoot-Portfolio.png"
             alt="portfolio screenshot"
           />
-          <h1 class="section-title margin-top-12">Portfolio</h1>
+          <div class="flex work-description-wrapper">
+          <h1 class="section-title margin-top-12">Tonic</h1>
           <div class="work-period">
             <ul>
               <li class="text-color-primary">Canopy</li>
@@ -116,63 +132,6 @@
           </button>
           </div>
         </div>
-        <div class="flex works-grid-item">
-          <img
-            class="width-100"
-            src="Image/Calender.png"
-            alt="Calender"
-          />
-          <h1 class="section-title margin-top-12">To do list app</h1>
-          <div class="work-period">
-            <ul>
-              <li class="text-color-primary">Canopy</li>
-              <li>Back End Dev</li>
-              <li>2015</li>
-            </ul>
-          </div>
-          <p class="work-description text-color-primary margin-top-20">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="work-categories margin-top-12 padding-0">
-            <li><span>html</span></li>
-            <li><span>css</span></li>
-            <li><span>javascript</span></li>
-          </ul>
-          <div>
-            <button type="button" class="button button-enabled">
-            See Project
-          </button>
-          </div>
-        </div>
-        <div class="flex works-grid-item">
-          <img
-            class="width-100"
-            src="image/Fitness.png"
-            alt="Fitness screenshot"
-          />
-          <h1 class="section-title margin-top-12">fitness</h1>
-          <div class="work-period">
-            <ul>
-              <li class="text-color-primary">Canopy</li>
-              <li>Back End Dev</li>
-              <li>2015</li>
-            </ul>
-          </div>
-          <p class="work-description text-color-primary margin-top-20">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="work-categories margin-top-12 padding-0">
-            <li><span>html</span></li>
-            <li><span>css</span></li>
-            <li><span>javascript</span></li>
-          </ul>
-          <div>
-            <button type="button" class="button button-enabled">
-            See Project
-          </button>
-          </div>
         </div>
         <div class="flex works-grid-item">
           <img
@@ -180,6 +139,7 @@
             src="Image/Printing.png"
             alt="styling screenshot"
           />
+          <div class="flex work-period-wrapper">
           <h1 class="section-title margin-top-12">Printing</h1>
           <div class="work-period">
             <ul>
@@ -203,11 +163,78 @@
           </button>
           </div>
         </div>
+        </div>
+        <div class="flex works-grid-item">
+          <div class="work-image">
+          <img
+            class="width-100"
+            src="Image/Tonic.png"
+            alt="Calender"
+          />
+          </div>
+          <div class="flex section-title-wrapper">
+          <h1 class="section-title margin-top-12">To do list app</h1>
+          <div class="work-period">
+            <ul>
+              <li class="text-color-primary">Canopy</li>
+              <li>Back End Dev</li>
+              <li>2015</li>
+            </ul>
+          </div>
+          <p class="work-description text-color-primary margin-top-20">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="work-categories margin-top-12 padding-0">
+            <li><span>html</span></li>
+            <li><span>css</span></li>
+            <li><span>javascript</span></li>
+          </ul>
+          <div>
+            <button type="button" class="button button-enabled">
+            See Project
+          </button>
+          </div>
+        </div>
+        </div>
+        <div class="flex works-grid-item">
+          <img
+            class="width-100"
+            src="Image/Calender.png"
+            alt="Fitness screenshot"
+          />
+          <div class="flex work-details-wrapper">
+          <h1 class="section-title margin-top-12">Calender Web App</h1>
+          <div class="work-period">
+            <ul>
+              <li class="text-color-primary">Canopy</li>
+              <li>Back End Dev</li>
+              <li>2015</li>
+            </ul>
+          </div>
+          <p class="work-description text-color-primary margin-top-20">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="work-categories margin-top-12 padding-0">
+            <li><span>html</span></li>
+            <li><span>css</span></li>
+            <li><span>javascript</span></li>
+          </ul>
+          <div>
+            <button type="button" class="button button-enabled">
+            See Project
+          </button>
+          </div>
+        </div>
+        </div>
       </div>
     </section>
 
     <section class="about-myself padding-top-114">
       <div class="flex-about-wrap">
+        <div class="container about-section">
+          <div class="container-aboutleft">
         <h2 class="section-title">About <br> Myself</h2>
         <p class="headline-profile text-color-primary margin-top-12">
           I’m a software developer! I can help you build a product , feature or
@@ -223,7 +250,7 @@
             <a href="#">
               <img
                 class="social github"
-                src="Image/Github.png"
+                src="./Image/GitHub.png"
                 alt="Github icon"
               />
             </a>
@@ -266,6 +293,7 @@
           See my resume
         </button>
         </div>
+      </div>
         <div class="other-info">
           <ul class="flex other-info-wrap padding-0">
             <li class="other-info-list">
@@ -359,6 +387,7 @@
             </li>
           </ul>
         </div>
+      </div>
       </div>
     </section>
 
