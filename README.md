@@ -10,6 +10,7 @@
 - Use flexbox to place element in the page.
 - Use CSS grid to place elements in the page.
 - Build a personal portfolio site.
+- Make the website responsive.
 
 ## Built With
 
@@ -17,7 +18,9 @@
 - css
 - Linters
 
+## Live Demo
 
+[Live Demo Link](https://richy4dev.github.io/Personal-Portfolio/)
 
 To get a local copy up and running follow these simple example steps.
 
@@ -54,6 +57,7 @@ Give a ⭐️ if you like this project!
 
 - Inspiration
 Proud of the effort i put in, and the reviews. Thank you all.
+- Special thanks to my microverse coding partners and colleague [Rejoice Evans]https://github.com/rmjspecial
 - etc
 
 ## 📝 License
